@@ -1,0 +1,14 @@
+#container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.question {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
