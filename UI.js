@@ -36,7 +36,8 @@ export default class UI {
                                                     <br>
                                                         <br>
                                                             <label style="color: blue;" for="select${i}" class="form-label">Choose your answer</label>
-                                                                <select id="select${i}" class="form-control">
+                                                                <select id="select${i}" class="form-control" required>
+                                                                <option value="">Selecciona la respuesta</option>
                                                                     <option id="${copy[0]}" value="${copy[0]}">${copy[0]}</option>
                                                                     <option id="${copy[1]}" value="${copy[1]}">${copy[1]}</option>
                                                                     <option id="${copy[2]}" value="${copy[2]}">${copy[2]}</option>
@@ -58,7 +59,8 @@ export default class UI {
                                                                             <br>
                                                                                 <br>
                                                                                     <label style="color: blue;" for="select${i}" class="form-label">Select te correct question</label>
-                                                                                        <select id="select${i}" class="form-control">
+                                                                                        <select id="select${i}" class="form-control"required>
+                                                                                        <option value="">Selecciona la respuesta</option>
                                                                                             <option id="${booleano[0]}" value="${booleano[0]}">${booleano[0]}</option>
                                                                                             <option id="${booleano[1]}" value="${booleano[1]}">${booleano[1]}</option>
                                                                                         </select>

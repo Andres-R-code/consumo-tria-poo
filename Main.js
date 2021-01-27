@@ -31,6 +31,17 @@ const form2 = document.getElementById("container-Questions");
         });
 
         form2.addEventListener("submit",(event)=> {
+                if (request.getQuestions()==1) {
+                        const form2 = document.getElementById("container-Questions");
+                        form2.innerHTML="";
+                        form2.innerHTML=`<div class="col-md-6" style="margin: auto;">
+                                                <div class="alert alert-danger">
+                                                        <div class="alert-body">
+                                                                You need to complete all the fields.
+                                                        </div>
+                                                </div>
+                                        </div>`;
+                        }
         event.preventDefault();
         UI.printValidation();
         })
